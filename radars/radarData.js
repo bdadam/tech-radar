@@ -1,5 +1,5 @@
 //This is the title for your window tab, and your Radar
-document.title = "Autoscout24 Technology Radar (Q1 2016)";
+document.title = "AutoScout24 Technology Radar (Q1 2016)";
 
 
 //This is the concentic circles that want on your radar

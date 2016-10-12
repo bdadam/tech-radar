@@ -120,6 +120,7 @@ var radar_data = [
             {name: 'Hystrix', pc: {r: 250, t: 25}, "movement": "c", "url": "", "explanation": "" },
             {name: 'Caddy Server', pc: {r: 250, t: 15}, "movement": "c", "url": "", "explanation": "" },
             {name: 'Gulp', pc: {r: 250, t: 5}, "movement": "c", "url": "", "explanation": "" },
+            {name: 'SauceLabs', pc: {r: 250, t: 5}, "movement": "c", "url": "https://saucelabs.com/", "explanation": "The world’s largest cloud-based platform for automated testing of web and mobile applications. Instant access to web browsers, mobile emulators and simulators, and real mobile devices." },
 
             {name: 'Gitrob', pc: {r: 350, t: 80}, "movement": "c", "url": "https://github.com/michenriksen/gitrob", "explanation": "We tested Gitrob to scan our repositories for leaking secrets. As Gitrob is scanning only file paths for patterns instead of the content and is also quite hard to automate, we found it to be much less helpful than git-secrets." },
             {name: 'SVN', pc: {r: 340, t: 65}, "movement": "c", "url": "", "explanation": "Even while subversion is a straight-foward version control system, it lacks in features like offline-support, pull requests and easy ways to merge and branch. Also the social coding features of GitHub.com speak for themselves." },

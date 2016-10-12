@@ -86,9 +86,6 @@ var radar_data = [
             {"name": "CMS Boxes misuse", "pc": {"r": 350, "t": 140}, "movement": "c", "url": "", "explanation": "CMS boxes are a common pattern for us. They provided a fast way to get different content on the web pages. As we are deploying more often today and have introduced UI composition to include content from different sources, we think that we should use CMS boxes for editorial content only. We should not use them for bringing advertisements or label texts on the pages." },
             {"name": "Feature Branches", "pc": {"r": 350, "t": 155}, "movement": "c", "url": "", "explanation": "Feature branches isolate your work and defer continuous integration. The longer they exist the more it hurts to merge them back. Practices like Gitflow can support such a behaviour. When the only reason to start a new branch is the fear of continuous integration and therefore continuous deployment stop it." },
             {"name": "Custom Basic Authentication", "pc": {"r": 350, "t": 170}, "movement": "c", "url": "", "explanation": "While we are in our migration phase from the datacenter to the cloud not all platform services are available yet. To secure our APIs and administrative pages is hard without being able to use an identity service, therefore we have started to create workarounds by seting up custom basic authentication. We should strive to replace those solutions with proper OAuth2 implementations." }
-
-
-
         ]
     },
     {
@@ -109,6 +106,7 @@ var radar_data = [
             {name: 'Chaos Monkey', pc: {r: 150, t: 36}, "movement": "c", "url": "", "explanation": "" },
             {name: 'Percolator', pc: {r: 150, t: 22}, "movement": "c", "url": "https://www.elastic.co/guide/en/elasticsearch/reference/current/search-percolate.html", "explanation": "Inverted search: For us this would help with saved search, where we store the searches in ES and use our listing events to match saved searches and notify the users on matches. Either in realtime or when the user wants to be notified." },
             {name: 'git-secrets', pc: {r: 150, t: 7}, "movement": "c", "url": "https://github.com/awslabs/git-secrets", "explanation": "To prevent secrets leaking on GitHub we are scanning our repositories with git-secrets. Compared to gitrob this tool also scans the file contents and can work preemptively as a pre-commit hook." },
+            {name: 'Gulp', pc: {r: 150, t: 5}, "movement": "c", "url": "http://gulpjs.com/", "explanation": "Gulp is a toolkit that helps you automate painful or time-consuming tasks in your development workflow." },
 
 
             {name: 'Instana', pc: {r: 250, t: 85}, "movement": "c", "url": "http://www.instana.com/", "explanation": "Instana is a new generation monitoring service which is currently in beta status. It's high resolution and intelligent learning technology it looks like an interesting alternative to existing solutions." },
@@ -118,8 +116,6 @@ var radar_data = [
             {name: 'Elastic Search Watcher', pc: {r: 250, t: 45}, "movement": "c", "url": "https://www.elastic.co/guide/en/watcher/current/index.html", "explanation": "ES Watcher is an Elasticsearch plugin to create notifications based on the ES cluster data when some conditions occur. It can be used for further refining our alarming system or other types of notifications." },
             {name: 'Cassandra', pc: {r: 250, t: 35}, "movement": "c", "url": "http://cassandra.apache.org/", "explanation": "Highly available distributed database, with cross region replication. De facto standard for many cloud stacks, that would violate our AWS first priniciple. Only consider it, when we hit DynamoDB limitations." },
             {name: 'Hystrix', pc: {r: 250, t: 25}, "movement": "c", "url": "", "explanation": "" },
-            {name: 'Caddy Server', pc: {r: 250, t: 15}, "movement": "c", "url": "", "explanation": "" },
-            {name: 'Gulp', pc: {r: 250, t: 5}, "movement": "c", "url": "", "explanation": "" },
 
             {name: 'Gitrob', pc: {r: 350, t: 80}, "movement": "c", "url": "https://github.com/michenriksen/gitrob", "explanation": "We tested Gitrob to scan our repositories for leaking secrets. As Gitrob is scanning only file paths for patterns instead of the content and is also quite hard to automate, we found it to be much less helpful than git-secrets." },
             {name: 'SVN', pc: {r: 340, t: 65}, "movement": "c", "url": "", "explanation": "Even while subversion is a straight-foward version control system, it lacks in features like offline-support, pull requests and easy ways to merge and branch. Also the social coding features of GitHub.com speak for themselves." },
